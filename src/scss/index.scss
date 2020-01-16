@@ -1,0 +1,9 @@
+@import './_variables.scss';
+
+@import '../views/components/alert/alert.scss';
+@import '../views/components/sidebar/sidebar.scss';
+
+#canvas-wrapper {
+    width: calc(100% - var(--sidebar-width));
+    height: 100vh;
+}

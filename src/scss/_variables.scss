@@ -1,0 +1,16 @@
+/* Variables
+================================= */
+:root {
+    --sidebar-width: 200px;
+}
+
+/* Breakpoints
+================================= */
+
+$layout-mobile-only: 'max-width: 767px';
+$layout-tablet-only: 'min-width: 768px and max-width: 1099px';
+$layout-desktop-only: '(min-width: 1100px)';
+
+$layout-gte-tablet: 'min-width: 768px';
+
+$layout-lte-tablet: 'max-width: 1099px';
