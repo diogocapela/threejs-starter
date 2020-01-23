@@ -25,6 +25,14 @@ camera.position.z = 5;
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(width, height);
 
-document.getElementById('canvas-wrapper').appendChild(renderer.domElement);
+// Append top and bottom black divs to hide three.js remains
+const blackBox = document.createElement('div');
+blackBox.style.width = '500px';
+blackBox.style.height = '500px';
+blackBox.style.background = 'red';
+
+// wrapper.appendChild(blackBox);
+
+wrapper.appendChild(renderer.domElement);
 
 export { gui, scene, camera, renderer };
